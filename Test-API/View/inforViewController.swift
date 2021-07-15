@@ -16,7 +16,7 @@ class InforViewController: UIViewController {
     var gender : String = ""
     var species : String = ""
     var image : String = ""
-    
+    //MARK: - IBoutlet
     @IBOutlet weak var genderlbl: UILabel!
     @IBOutlet weak var specieslbl: UILabel!
     @IBOutlet weak var statuslbl: UILabel!
@@ -45,7 +45,7 @@ class InforViewController: UIViewController {
                 ])
         }
     }
-    
+    //MARK: - BindData
     public func bindData(character: Userinfor) {
         if let image = character.image , let name = character.name, let status = character.status, let gender = character.gender , let species = character.species {
             self.image = image
