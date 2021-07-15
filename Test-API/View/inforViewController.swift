@@ -6,30 +6,58 @@
 //
 
 import UIKit
+import Kingfisher
 
-class inforViewController: UIViewController {
-    private var usecharacter : [Userinfor] = []
-    private var service = Service()
+// final dau?toi chua chinh
+class InforViewController: UIViewController {
+    
+    var name : String = ""
+    var status : String = ""
+    var gender : String = ""
+    var species : String = ""
+    var image : String = ""
+    
     @IBOutlet weak var genderlbl: UILabel!
     @IBOutlet weak var specieslbl: UILabel!
     @IBOutlet weak var statuslbl: UILabel!
     @IBOutlet weak var namelbl: UILabel!
     @IBOutlet weak var img: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        service.getAllCharacter(endPoint: "character")
-        // call back when response
-        service.reloadTable = { [weak self] usedinforlist in
-            self?.usecharacter = usedinforlist
+        self.namelbl.text = name
+        self.statuslbl.text = status
+        self.specieslbl.text = species
+        self.genderlbl.text = gender
+        if let url = URL(string: image ?? ""){
+            let processor = DownsamplingImageProcessor(size: img.bounds.size)
+                |> RoundCornerImageProcessor(cornerRadius: 20)
+            
+            img.kf.indicatorType = .activity
+            img.kf.setImage(
+                with: url,
+                placeholder: UIImage(named: "placeholderImage"),
+                options: [
+                    .processor(processor),
+                    .scaleFactor(UIScreen.main.scale),
+                    .transition(.fade(1)),
+                    .cacheOriginalImage
+                ])
         }
-//        self.bindData(character: Userinfor)
     }
-    func bindData(character: Userinfor) {
-        self.namelbl.text = "Name : " + character.name!
-        self.statuslbl.text = "Status : " + character.status!
-        self.genderlbl.text = "Species : " + character.gender!
+    
+    public func bindData(character: Userinfor) {
+        if let image = character.image , let name = character.name, let status = character.status, let gender = character.gender , let species = character.species {
+            self.image = image
+            self.name = "Name : " + name
+            self.status = "Status : " + status
+            self.gender = "Gender : " + gender
+            self.species = "Species : " + species
+        }
+        
     }
 }
+
 extension UIViewController {
     static func initFromNib() -> Self {
         func instanceFromNib<T: UIViewController>() -> T {
