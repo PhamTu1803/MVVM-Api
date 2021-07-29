@@ -10,6 +10,7 @@
 		7CDF2CEB99CFB23632F1651A /* Pods_Test_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F082382C3C490A1C5D229333 /* Pods_Test_API.framework */; };
 		9D46568ADB67D0E1F4D96533 /* Pods_Test_API_Test_APIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACC9DA71D8F40703452DC31 /* Pods_Test_API_Test_APIUITests.framework */; };
 		EE1CEFC4269846BB00B5BED4 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1CEFC3269846BB00B5BED4 /* CharacterViewModel.swift */; };
+		EE300AC726B29E3D00B03FF2 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = EE300AC626B29E3D00B03FF2 /* ReadMe.md */; };
 		EE3B6DEB269EC6C3002518E9 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3B6DEA269EC6C3002518E9 /* LocationViewModel.swift */; };
 		EE3B6DF1269EC8EF002518E9 /* LocationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3B6DEF269EC8EF002518E9 /* LocationViewCell.swift */; };
 		EE3B6DF2269EC8EF002518E9 /* LocationViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3B6DF0269EC8EF002518E9 /* LocationViewCell.xib */; };
@@ -59,6 +60,7 @@
 		BCDB2478FBA84617D1468E9C /* Pods-Test-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-API.release.xcconfig"; path = "Target Support Files/Pods-Test-API/Pods-Test-API.release.xcconfig"; sourceTree = "<group>"; };
 		DF08233F575929621D015490 /* Pods-Test-APITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-APITests.release.xcconfig"; path = "Target Support Files/Pods-Test-APITests/Pods-Test-APITests.release.xcconfig"; sourceTree = "<group>"; };
 		EE1CEFC3269846BB00B5BED4 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		EE300AC626B29E3D00B03FF2 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		EE3B6DEA269EC6C3002518E9 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		EE3B6DEF269EC8EF002518E9 /* LocationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewCell.swift; sourceTree = "<group>"; };
 		EE3B6DF0269EC8EF002518E9 /* LocationViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewCell.xib; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				EEBA5120269564B200C60319 /* Assets.xcassets */,
 				EEBA5122269564B200C60319 /* LaunchScreen.storyboard */,
 				EEBA5125269564B200C60319 /* Info.plist */,
+				EE300AC626B29E3D00B03FF2 /* ReadMe.md */,
 			);
 			path = "Test-API";
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			files = (
 				EE3B6DF2269EC8EF002518E9 /* LocationViewCell.xib in Resources */,
 				EEBA5124269564B200C60319 /* LaunchScreen.storyboard in Resources */,
+				EE300AC726B29E3D00B03FF2 /* ReadMe.md in Resources */,
 				EEBA5121269564B200C60319 /* Assets.xcassets in Resources */,
 				EE93AAE7269D7AD300F5FB58 /* CharacterViewCell.xib in Resources */,
 				EEBA511F269564B100C60319 /* Main.storyboard in Resources */,
